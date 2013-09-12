@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 WiYun Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<FrameLayout 	
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+    <!-- top container -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+	    <!-- announcement container -->
+	    <FrameLayout
+	        android:layout_width="380dp"
+	        android:layout_height="52dp"
+	        android:background="@drawable/wy_wiboard_bg_land">
+	
+	        <!-- progress bar -->
+	        <ProgressBar
+	            android:id="@+id/wy_pb"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:indeterminate="true"
+	            android:layout_gravity="center"
+	            android:visibility="invisible"/>
+	        
+		    <!-- announcement gallery -->
+	        <Gallery
+		        android:id="@+id/wy_g_anno"
+		        android:layout_width="350dp"
+		        android:layout_height="fill_parent"
+		        android:spacing="10dp"
+		        android:gravity="center_vertical"
+		        android:visibility="invisible"/>
+		    
+	    </FrameLayout>
+	    
+	    <!-- pullup button -->
+	    <Button
+	        android:id="@+id/wy_btn_pullup"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="-2dp"
+	        android:background="@drawable/wy_wiboard_pullup_btn_land"/>
+    
+    </LinearLayout>
+    
+    <!-- button container bg -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/wy_btn_bg_land"
+        android:paddingLeft="20dp"
+        android:gravity="center">
+        
+        <!-- challenge button container -->
+        <FrameLayout
+            android:id="@+id/wy_btn_challenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/wy_wiboard_btn_challenge_land">
+        
+            <!-- badge text -->
+            <TextView
+                android:id="@+id/wy_challenge_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:background="@drawable/wy_float_badge"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:includeFontPadding="false"
+                android:textColor="#ffffffff"
+                android:visibility="invisible"
+                android:singleLine="false"/>
+            
+        </FrameLayout>
+
+        <!-- message button container -->
+        <FrameLayout
+            android:id="@+id/wy_btn_message"
+            android:background="@drawable/wy_wiboard_btn_message_land"
+            android:clickable="true"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- badge text -->
+            <TextView
+                android:id="@+id/wy_message_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:background="@drawable/wy_float_badge"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:includeFontPadding="false"
+                android:textColor="#ffffffff"
+                android:visibility="invisible"
+                android:singleLine="false"/>
+            
+	    </FrameLayout>
+
+        <!-- friend button container -->
+        <FrameLayout
+            android:id="@+id/wy_btn_friend"
+            android:background="@drawable/wy_wiboard_btn_friend_land"
+            android:clickable="true"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <!-- badge text -->
+            <TextView
+                android:id="@+id/wy_friend_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:background="@drawable/wy_float_badge"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:includeFontPadding="false"
+                android:textColor="#ffffffff"
+                android:visibility="invisible"
+                android:singleLine="false"/>
+            
+        </FrameLayout>
+        
+    </LinearLayout>
+
+</FrameLayout>

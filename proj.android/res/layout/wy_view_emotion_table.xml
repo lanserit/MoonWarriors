@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wy_tl_smily_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wy_smily_panel_bg"
+    android:stretchColumns="0,2,4,6,8,10,12" >
+
+</TableLayout>

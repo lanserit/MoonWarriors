@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 WiYun Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout 	
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="320dp"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/wy_wiboard_bg_land"
+	android:paddingLeft="5dp"
+	android:paddingRight="5dp"
+	android:paddingTop="5dp"
+	android:paddingBottom="5dp"
+	android:clickable="true">
+	
+    <!-- score result -->
+	<TextView 
+		android:id="@+id/wy_tv_score"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@android:style/TextAppearance.Medium"
+	    android:textColor="@color/wy_score_color"
+	    android:gravity="center"
+	    android:ellipsize="marquee"
+	    android:singleLine="true"/>
+	
+	<!-- separator -->
+	<ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="2dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/wy_separator_h_style1"/>
+	
+    <!-- title -->
+    <TextView 
+        android:id="@+id/wy_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Medium.Inverse"
+        android:singleLine="false"
+        android:gravity="center"/>
+    
+    <!-- bottom area -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <!-- icon -->
+        <ImageView 
+            android:id="@+id/wy_iv_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="fitXY"/>
+        
+        <!-- name and desc -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="7dp"
+            android:gravity="center">
+            
+            <!-- name -->
+            <TextView 
+                android:id="@+id/wy_tv_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@android:style/TextAppearance.Small.Inverse"
+                android:textSize="16sp"/>
+            
+            <!-- desc -->
+            <TextView 
+                android:id="@+id/wy_tv_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                style="@android:style/TextAppearance.Small.Inverse"/>
+            
+        </LinearLayout>
+        
+        <!-- arrow -->
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wy_right_arrow"
+            android:layout_marginLeft="5dp"/>
+        
+    </LinearLayout>
+	    
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+         xmlns:android="http://schemas.android.com/apk/res/android" 
+         android:layout_height="wrap_content" 
+         android:paddingBottom="4dip" 
+         android:layout_width="fill_parent"
+         android:orientation="vertical"
+         >
+         <ImageView 
+               android:layout_height="50dp" 
+               android:id="@+id/wy_portraitImage" 
+               android:layout_width="50dp" 
+               android:layout_gravity="center"
+          > 
+         </ImageView>
+         <TextView android:text=""
+         	 android:layout_width="wrap_content"
+         	 android:singleLine="true" 
+         	 android:layout_height="wrap_content" 
+         	 android:id="@+id/wy_portraitName"
+         	 android:layout_gravity="center"
+         	 ></TextView>
+         <ImageView 
+         	android:background="@drawable/wy_unselected" 
+         	android:id="@+id/wy_selectPortrait" 
+         	android:layout_gravity="center"
+         	android:layout_width="wrap_content" 
+         	android:layout_height="wrap_content"
+         	>
+        	</ImageView>
+</LinearLayout>
+
